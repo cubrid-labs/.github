@@ -42,6 +42,8 @@ CUBRID Labs는 CUBRID 데이터베이스를 위한 현대적이고 생산성 높
 
 ## Getting Started
 
+> **New to CUBRID?** Read the [CUBRID in 5 Minutes](https://github.com/cubrid-labs/cubrid-cookbook/blob/main/GETTING_STARTED.md) guide — pick your language and build something in one page.
+
 **Choose your language:**
 
 - **Python**: [`sqlalchemy-cubrid`](https://github.com/cubrid-labs/sqlalchemy-cubrid) (ORM via SQLAlchemy) or [`pycubrid`](https://github.com/cubrid-labs/pycubrid) (native driver)

@@ -34,8 +34,8 @@ benchmark → profile → optimize driver/ORM → re-benchmark → CI-verified r
 | Repo | Role | Current State |
 |------|------|---------------|
 | `cubrid-benchmark` | Benchmark suite (Python/TS/Go × CUBRID/MySQL) | Tier 0+1+Extended, CI, GitHub Pages — **most mature** |
-| `pycubrid` | Python driver (PEP 249) | v0.5.0, published PyPI — **4.5-6× slower than MySQL, optimization not started** |
-| `sqlalchemy-cubrid` | SQLAlchemy 2.0 dialect | v2.1.1, published PyPI — **ORM optimization not started** |
+| `pycubrid` | Python driver (PEP 249) | v0.6.0, published PyPI — **2 optimization cycles complete, 19% fetch improvement** |
+| `sqlalchemy-cubrid` | SQLAlchemy 2.0 dialect | v0.7.1, published PyPI — **query compilation optimized** |
 | `cubrid-cookbook` | Runnable examples across all languages | Broad coverage — **expected outputs not standardized** |
 
 ### Supporting Repos

@@ -1,6 +1,6 @@
 # CUBRID Labs — Ecosystem Roadmap
 
-> **Last updated**: 2026-03-20
+> **Last updated**: 2026-03-28
 >
 > This is the unified roadmap for the cubrid-labs ecosystem.
 > Milestones are authoritative for "next release" scope.
@@ -15,14 +15,14 @@
 ```mermaid
 graph TD
     subgraph Drivers["🔌 Drivers"]
-        pycubrid["pycubrid (Python)\nv0.5.0"]
+        pycubrid["pycubrid (Python)\nv0.6.0"]
         cubrid_client["cubrid-client (TypeScript)\nv1.1.0"]
         cubrid_go["cubrid-go (Go)\nv0.2.1"]
         cubrid_rs["cubrid-rs (Rust)\nv0.1.0"]
     end
 
     subgraph ORMs["🏗️ ORMs & Dialects"]
-        sqlalchemy["sqlalchemy-cubrid\nv2.1.1"]
+        sqlalchemy["sqlalchemy-cubrid\nv0.7.1"]
         drizzle["drizzle-cubrid\nv0.2.1"]
         gorm["gorm-cubrid\nv0.1.0"]
         sea_orm["sea-orm-cubrid\nv0.1.0"]
@@ -55,7 +55,7 @@ graph TD
 
 ### 🟢 Now (Current Focus)
 
-- **Performance profiling & optimization** — Address Python 4.5–6× gap vs MySQL (pycubrid, sqlalchemy-cubrid)
+- **Performance profiling & optimization** — Python driver optimized (19% fetch improvement); query compilation cache added to sqlalchemy-cubrid. Ongoing: further gap reduction vs MySQL.
 - **Benchmark automation** — Nightly CI runs with extended workloads (connect/disconnect, prepared statements, batch insert, concurrent select)
 - **cubrid-rs protocol completion** — Broker handshake, authentication, query execution (v0.2.0)
 
@@ -63,7 +63,7 @@ graph TD
 
 - **v1.0 stabilization** — API freeze for cubrid-go, gorm-cubrid, drizzle-cubrid
 - **Connection resilience** — Retry policies, connection health checks (cubrid-client v1.2.0)
-- **Registry publishing** — crates.io (cubrid-rs, sea-orm-cubrid), PyPI Trusted Publisher (pycubrid, sqlalchemy-cubrid)
+- **Registry publishing** — crates.io (cubrid-rs, sea-orm-cubrid); PyPI Trusted Publisher configured ✅ (pycubrid v0.6.0, sqlalchemy-cubrid v0.7.1 published)
 - **Cookbook completeness** — Rust examples after crates.io publish, all examples verified working
 
 ### 🔵 Later (3–6 Months)
@@ -88,7 +88,7 @@ graph LR
     end
 
     subgraph "Depends on driver stability"
-        E[sqlalchemy-cubrid v2.2.0]
+        E[sqlalchemy-cubrid v0.8.0]
         F[gorm-cubrid v1.0.0]
         G[drizzle-cubrid v1.0.0]
         H[sea-orm-cubrid v1.0.0]
@@ -119,10 +119,10 @@ graph LR
 
 | Repo | Next Milestone | Focus | Link |
 |------|---------------|-------|------|
-| **pycubrid** | [v0.6.0](https://github.com/cubrid-labs/pycubrid/milestone/2) | Performance — address 4.5–6× gap vs MySQL | [Milestones](https://github.com/cubrid-labs/pycubrid/milestones) |
+| **pycubrid** | [v0.6.0](https://github.com/cubrid-labs/pycubrid/milestone/2) | Performance — ✅ shipped (19% fetch improvement, 2 optimization cycles) | [Milestones](https://github.com/cubrid-labs/pycubrid/milestones) |
 | **pycubrid** | [v1.0.0](https://github.com/cubrid-labs/pycubrid/milestone/1) | Stable release — full PEP 249, connection pooling | [Milestones](https://github.com/cubrid-labs/pycubrid/milestones) |
-| **sqlalchemy-cubrid** | [v2.2.0](https://github.com/cubrid-labs/sqlalchemy-cubrid/milestone/1) | Performance & optimization | [Milestones](https://github.com/cubrid-labs/sqlalchemy-cubrid/milestones) |
-| **sqlalchemy-cubrid** | [v2.3.0](https://github.com/cubrid-labs/sqlalchemy-cubrid/milestone/2) | Ecosystem & documentation | [Milestones](https://github.com/cubrid-labs/sqlalchemy-cubrid/milestones) |
+| **sqlalchemy-cubrid** | [v0.8.0](https://github.com/cubrid-labs/sqlalchemy-cubrid/milestone/1) | Performance & optimization | [Milestones](https://github.com/cubrid-labs/sqlalchemy-cubrid/milestones) |
+| **sqlalchemy-cubrid** | [v0.9.0](https://github.com/cubrid-labs/sqlalchemy-cubrid/milestone/2) | Ecosystem & documentation | [Milestones](https://github.com/cubrid-labs/sqlalchemy-cubrid/milestones) |
 | **cubrid-client** | [v1.2.0](https://github.com/cubrid-labs/cubrid-client/milestone/1) | Reliability & performance | [Milestones](https://github.com/cubrid-labs/cubrid-client/milestones) |
 | **drizzle-cubrid** | [v1.0.0](https://github.com/cubrid-labs/drizzle-cubrid/milestone/1) | Stable release | [Milestones](https://github.com/cubrid-labs/drizzle-cubrid/milestones) |
 | **cubrid-go** | [v1.0.0](https://github.com/cubrid-labs/cubrid-go/milestone/1) | Stable release | [Milestones](https://github.com/cubrid-labs/cubrid-go/milestones) |

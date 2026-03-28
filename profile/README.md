@@ -23,28 +23,28 @@ CUBRID Labs는 CUBRID 데이터베이스를 위한 현대적이고 생산성 높
 
 ### Drivers
 
-| Repository | Language | Description | Status |
-|---|---|---|---|
-| **[pycubrid](https://github.com/cubrid-labs/pycubrid)** | Python | Pure Python DB-API 2.0 compliant driver | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/pycubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/pycubrid/actions) |
-| **[cubrid-client](https://github.com/cubrid-labs/cubrid-client)** | TypeScript | TypeScript-first Node.js client with async/await | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-client/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-client/actions) [![npm](https://img.shields.io/npm/v/cubrid-client)](https://www.npmjs.com/package/cubrid-client) |
-| **[cubrid-go](https://github.com/cubrid-labs/cubrid-go)** | Go | Pure Go `database/sql` driver | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-go/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-go/actions) |
-| **[cubrid-rs](https://github.com/cubrid-labs/cubrid-rs)** | Rust | Async Rust driver (reverse-engineered CAS protocol) | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-rs/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-rs/actions) |
+| Repository | Language | Version | Description | Status |
+|---|---|---|---|---|
+| **[pycubrid](https://github.com/cubrid-labs/pycubrid)** | Python | v0.6.0 ![stable](https://img.shields.io/badge/-stable-brightgreen) | Pure Python DB-API 2.0 compliant driver | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/pycubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/pycubrid/actions) [![PyPI](https://img.shields.io/pypi/v/pycubrid)](https://pypi.org/project/pycubrid) |
+| **[cubrid-client](https://github.com/cubrid-labs/cubrid-client)** | TypeScript | v1.1.0 ![stable](https://img.shields.io/badge/-stable-brightgreen) | TypeScript-first Node.js client with async/await | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-client/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-client/actions) [![npm](https://img.shields.io/npm/v/cubrid-client)](https://www.npmjs.com/package/cubrid-client) |
+| **[cubrid-go](https://github.com/cubrid-labs/cubrid-go)** | Go | v0.2.1 ![beta](https://img.shields.io/badge/-beta-yellow) | Pure Go `database/sql` driver | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-go/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-go/actions) |
+| **[cubrid-rs](https://github.com/cubrid-labs/cubrid-rs)** | Rust | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | Async Rust driver (reverse-engineered CAS protocol) | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-rs/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-rs/actions) |
 
 ### ORMs & Dialects
 
-| Repository | Language | Description | Status |
-|---|---|---|---|
-| **[sqlalchemy-cubrid](https://github.com/cubrid-labs/sqlalchemy-cubrid)** | Python | SQLAlchemy 2.0–2.1 dialect | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/sqlalchemy-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/sqlalchemy-cubrid/actions) [![Coverage](https://img.shields.io/badge/coverage-99.47%25-brightgreen)](https://github.com/cubrid-labs/sqlalchemy-cubrid) |
-| **[drizzle-cubrid](https://github.com/cubrid-labs/drizzle-cubrid)** | TypeScript | Drizzle ORM dialect with type-safe schema | [![npm](https://img.shields.io/npm/v/drizzle-cubrid)](https://www.npmjs.com/package/drizzle-cubrid) |
-| **[gorm-cubrid](https://github.com/cubrid-labs/gorm-cubrid)** | Go | GORM dialect for CUBRID | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/gorm-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/gorm-cubrid/actions) |
-| **[sea-orm-cubrid](https://github.com/cubrid-labs/sea-orm-cubrid)** | Rust | SeaORM backend for CUBRID | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/sea-orm-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/sea-orm-cubrid/actions) |
+| Repository | Language | Version | Description | Status |
+|---|---|---|---|---|
+| **[sqlalchemy-cubrid](https://github.com/cubrid-labs/sqlalchemy-cubrid)** | Python | v2.1.1 ![stable](https://img.shields.io/badge/-stable-brightgreen) | SQLAlchemy 2.0–2.1 dialect | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/sqlalchemy-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/sqlalchemy-cubrid/actions) [![PyPI](https://img.shields.io/pypi/v/sqlalchemy-cubrid)](https://pypi.org/project/sqlalchemy-cubrid) |
+| **[drizzle-cubrid](https://github.com/cubrid-labs/drizzle-cubrid)** | TypeScript | v0.2.1 ![beta](https://img.shields.io/badge/-beta-yellow) | Drizzle ORM dialect with type-safe schema | [![npm](https://img.shields.io/npm/v/drizzle-cubrid)](https://www.npmjs.com/package/drizzle-cubrid) |
+| **[gorm-cubrid](https://github.com/cubrid-labs/gorm-cubrid)** | Go | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | GORM dialect for CUBRID | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/gorm-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/gorm-cubrid/actions) |
+| **[sea-orm-cubrid](https://github.com/cubrid-labs/sea-orm-cubrid)** | Rust | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | SeaORM backend for CUBRID | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/sea-orm-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/sea-orm-cubrid/actions) |
 
 ### Tools & Resources
 
-| Repository | Description |
-|---|---|
-| **[cubrid-cookbook](https://github.com/cubrid-labs/cubrid-cookbook)** | Production-ready examples across Python, TypeScript, Go, and Rust |
-| **[cubrid-benchmark](https://github.com/cubrid-labs/cubrid-benchmark)** | Multi-language benchmark suite (CUBRID vs MySQL) |
+| Repository | Description | Status |
+|---|---|---|
+| **[cubrid-python-cookbook](https://github.com/cubrid-labs/cubrid-python-cookbook)** | Production-ready Python examples — quickstarts, migration guides, templates | ![active](https://img.shields.io/badge/-active%20development-yellow) |
+| **[cubrid-benchmark](https://github.com/cubrid-labs/cubrid-benchmark)** | Scientific benchmark suite — reproducible experiments, automated comparison | ![active](https://img.shields.io/badge/-active%20development-yellow) |
 
 ---
 
@@ -58,7 +58,7 @@ Track execution on the **[Project Board](https://github.com/orgs/cubrid-labs/pro
 
 ## Getting Started
 
-> **New to CUBRID?** Read the [CUBRID in 5 Minutes](https://github.com/cubrid-labs/cubrid-cookbook/blob/main/GETTING_STARTED.md) guide — pick your language and build something in one page.
+> **New to CUBRID?** Start with the [Python Cookbook](https://github.com/cubrid-labs/cubrid-python-cookbook) — quickstarts, migration guides, and production templates.
 
 **Choose your language:**
 

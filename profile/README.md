@@ -21,23 +21,33 @@ CUBRID Labs는 CUBRID 데이터베이스를 위한 현대적이고 생산성 높
 
 ## Projects
 
-### Drivers
+### Python
 
-| Repository | Language | Version | Description | Status |
+| Repository | Role | Version | Description | Status |
 |---|---|---|---|---|
-| **[pycubrid](https://github.com/cubrid-labs/pycubrid)** | Python | v0.6.0 ![stable](https://img.shields.io/badge/-stable-brightgreen) | Pure Python DB-API 2.0 compliant driver | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/pycubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/pycubrid/actions) [![PyPI](https://img.shields.io/pypi/v/pycubrid)](https://pypi.org/project/pycubrid) |
-| **[cubrid-client](https://github.com/cubrid-labs/cubrid-client)** | TypeScript | v1.1.0 ![stable](https://img.shields.io/badge/-stable-brightgreen) | TypeScript-first Node.js client with async/await | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-client/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-client/actions) [![npm](https://img.shields.io/npm/v/cubrid-client)](https://www.npmjs.com/package/cubrid-client) |
-| **[cubrid-go](https://github.com/cubrid-labs/cubrid-go)** | Go | v0.2.1 ![beta](https://img.shields.io/badge/-beta-yellow) | Pure Go `database/sql` driver | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-go/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-go/actions) |
-| **[cubrid-rs](https://github.com/cubrid-labs/cubrid-rs)** | Rust | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | Async Rust driver (reverse-engineered CAS protocol) | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-rs/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-rs/actions) |
+| **[pycubrid](https://github.com/cubrid-labs/pycubrid)** | Driver | v1.0.0 ![stable](https://img.shields.io/badge/-stable-brightgreen) | Pure Python DB-API 2.0 (PEP 249) driver | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/pycubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/pycubrid/actions) [![PyPI](https://img.shields.io/pypi/v/pycubrid)](https://pypi.org/project/pycubrid) |
+| **[sqlalchemy-cubrid](https://github.com/cubrid-labs/sqlalchemy-cubrid)** | ORM | v1.0.0 ![stable](https://img.shields.io/badge/-stable-brightgreen) | SQLAlchemy 2.0–2.1 dialect + Alembic | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/sqlalchemy-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/sqlalchemy-cubrid/actions) [![PyPI](https://img.shields.io/pypi/v/sqlalchemy-cubrid)](https://pypi.org/project/sqlalchemy-cubrid) |
 
-### ORMs & Dialects
+### TypeScript / Node.js
 
-| Repository | Language | Version | Description | Status |
+| Repository | Role | Version | Description | Status |
 |---|---|---|---|---|
-| **[sqlalchemy-cubrid](https://github.com/cubrid-labs/sqlalchemy-cubrid)** | Python | v0.7.1 ![stable](https://img.shields.io/badge/-stable-brightgreen) | SQLAlchemy 2.0–2.1 dialect | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/sqlalchemy-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/sqlalchemy-cubrid/actions) [![PyPI](https://img.shields.io/pypi/v/sqlalchemy-cubrid)](https://pypi.org/project/sqlalchemy-cubrid) |
-| **[drizzle-cubrid](https://github.com/cubrid-labs/drizzle-cubrid)** | TypeScript | v0.2.1 ![beta](https://img.shields.io/badge/-beta-yellow) | Drizzle ORM dialect with type-safe schema | [![npm](https://img.shields.io/npm/v/drizzle-cubrid)](https://www.npmjs.com/package/drizzle-cubrid) |
-| **[gorm-cubrid](https://github.com/cubrid-labs/gorm-cubrid)** | Go | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | GORM dialect for CUBRID | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/gorm-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/gorm-cubrid/actions) |
-| **[sea-orm-cubrid](https://github.com/cubrid-labs/sea-orm-cubrid)** | Rust | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | SeaORM backend for CUBRID | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/sea-orm-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/sea-orm-cubrid/actions) |
+| **[cubrid-client](https://github.com/cubrid-labs/cubrid-client)** | Driver | v1.1.0 ![stable](https://img.shields.io/badge/-stable-brightgreen) | TypeScript-first async client | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-client/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-client/actions) [![npm](https://img.shields.io/npm/v/cubrid-client)](https://www.npmjs.com/package/cubrid-client) |
+| **[drizzle-cubrid](https://github.com/cubrid-labs/drizzle-cubrid)** | ORM | v0.2.1 ![beta](https://img.shields.io/badge/-beta-yellow) | Drizzle ORM dialect with type-safe schema | [![npm](https://img.shields.io/npm/v/drizzle-cubrid)](https://www.npmjs.com/package/drizzle-cubrid) |
+
+### Go
+
+| Repository | Role | Version | Description | Status |
+|---|---|---|---|---|
+| **[cubrid-go](https://github.com/cubrid-labs/cubrid-go)** | Driver | v0.2.1 ![beta](https://img.shields.io/badge/-beta-yellow) | Pure Go `database/sql` driver | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-go/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-go/actions) |
+| **[gorm-cubrid](https://github.com/cubrid-labs/gorm-cubrid)** | ORM | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | GORM dialect for CUBRID | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/gorm-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/gorm-cubrid/actions) |
+
+### Rust
+
+| Repository | Role | Version | Description | Status |
+|---|---|---|---|---|
+| **[cubrid-rs](https://github.com/cubrid-labs/cubrid-rs)** | Driver | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | Async Rust driver (pure Rust, no FFI) | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/cubrid-rs/ci.yml?label=tests)](https://github.com/cubrid-labs/cubrid-rs/actions) |
+| **[sea-orm-cubrid](https://github.com/cubrid-labs/sea-orm-cubrid)** | ORM | v0.1.0 ![alpha](https://img.shields.io/badge/-alpha-red) | SeaORM backend for CUBRID | [![Tests](https://img.shields.io/github/actions/workflow/status/cubrid-labs/sea-orm-cubrid/ci.yml?label=tests)](https://github.com/cubrid-labs/sea-orm-cubrid/actions) |
 
 ### Tools & Resources
 

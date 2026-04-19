@@ -1,6 +1,6 @@
 # CUBRID Labs — Ecosystem Roadmap
 
-> **Last updated**: 2026-03-28
+> **Last updated**: 2026-04-19
 >
 > This is the unified roadmap for the cubrid-labs ecosystem.
 > Milestones are authoritative for "next release" scope.
@@ -15,14 +15,14 @@
 ```mermaid
 graph TD
     subgraph Drivers["🔌 Drivers"]
-        pycubrid["pycubrid (Python)\nv0.6.0"]
+        pycubrid["pycubrid (Python)\nv1.2.0"]
         cubrid_client["cubrid-client (TypeScript)\nv1.1.0"]
         cubrid_go["cubrid-go (Go)\nv0.2.1"]
         cubrid_rs["cubrid-rs (Rust)\nv0.1.0"]
     end
 
     subgraph ORMs["🏗️ ORMs & Dialects"]
-        sqlalchemy["sqlalchemy-cubrid\nv0.7.1"]
+        sqlalchemy["sqlalchemy-cubrid\nv1.3.0"]
         drizzle["drizzle-cubrid\nv0.2.1"]
         gorm["gorm-cubrid\nv0.1.0"]
         sea_orm["sea-orm-cubrid\nv0.1.0"]
